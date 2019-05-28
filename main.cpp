@@ -39,7 +39,7 @@ void StartWindow() {
 int main() {
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
-	StartWindow();
+	//StartWindow();
 	StartProgramm();
 	while (true) {
 		MainMenu();

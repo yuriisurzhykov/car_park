@@ -260,7 +260,7 @@ void StringToCharArray(string NameFileStr, char* NameFileChar) {
 void DataAvailibility() {
 	if (Root == NULL) {
 		cout << endl << endl << "\tÂ ÁÀÇÅ ÍÅÒ ÄÀÍÍÛÕ! ÏÎÂÒÎÐÈÒÅ ÏÎÏÛÒÊÓ ÏÎÇÆÅ!" << endl << endl;
-		system("cls");
+		system("pause");
 		MainMenu();
 	}
 }
