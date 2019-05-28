@@ -17,15 +17,20 @@ void StartProgramm() {
 	cout << "________________________________" << endl;
 	cout << "1. Открыть основную базу данных." << endl;
 	cout << "2. Открыть свою базу данных." << endl;
+	cout << "3. Выполнить запуск без открытия файла с данными." << endl;
 	cout << "0. Выход.";
 	Answer = _getch();
-	while (Answer != '1' && Answer != '2' && Answer != '0') {
+	while (Answer != '1' && Answer != '2' && Answer != '3' && Answer != '0') {
 		cout << endl << "Нет такого варианта ответа!" << endl;
 		cout << "Выберите способ открытия файла" << endl;
 		Answer = _getch();
 	}
 	if (Answer == '0')
 		exit(0);
+	if (Answer == '3') {
+		Data_is_Saved = true;
+		MainMenu();
+	}
 	if (Answer == '2') {
 		string FileName;
 		do {
